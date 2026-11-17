@@ -1,24 +1,79 @@
-<!doctype html>
-<html lang="">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <title>交管12123</title>
-    <script>
-      // 先定义tmriSendMessage，避免webview生命周期调用的时序问题
-      window.tmriSendMessage = function () {}
-    </script>
-    <script type="module" crossorigin src="./assets/index-D5Na9oSE.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BO2lAo0J.css">
-    <script type="module">import.meta.url;import("_").catch(()=>1);(async function*(){})().next();if(location.protocol!="file:"){window.__vite_is_modern_browser=true}</script>
-    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy chunks, syntax error above and the same error below should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
-  </head>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ynwan — 个人主页</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    background: linear-gradient(160deg, #fdfbf7 0%, #f3ede3 55%, #e8e0d0 100%);
+    color: #2b2620;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 20px 40px;
+  }
+  main { max-width: 640px; width: 100%; }
+  .hello { font-size: 15px; letter-spacing: 0.35em; color: #a08c6d; margin-bottom: 18px; }
+  h1 { font-size: 52px; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 12px; }
+  .tagline { font-size: 20px; color: #6b5d4f; margin-bottom: 40px; line-height: 1.6; }
+  .card {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(160, 140, 109, 0.25);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 18px;
+    backdrop-filter: blur(6px);
+  }
+  .card h2 { font-size: 15px; letter-spacing: 0.2em; color: #a08c6d; margin-bottom: 12px; font-weight: 600; }
+  .card p, .card li { font-size: 16px; line-height: 1.9; color: #3d362e; }
+  .card ul { list-style: none; }
+  .card li::before { content: "· "; color: #c9a96e; font-weight: 700; }
+  blockquote {
+    margin-top: 28px;
+    padding-left: 18px;
+    border-left: 3px solid #c9a96e;
+    color: #6b5d4f;
+    font-size: 15px;
+    line-height: 1.9;
+  }
+  blockquote span { display: block; margin-top: 6px; font-size: 13px; color: #a08c6d; }
+  footer { margin-top: 48px; font-size: 13px; color: #a08c6d; text-align: center; }
+  @media (max-width: 480px) {
+    h1 { font-size: 40px; }
+    .tagline { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="hello">你好，我是</div>
+  <h1>Ynwan</h1>
+  <p class="tagline">跨境电商 · TikTok 短视频<br>一边做视频，一边学理财。</p>
 
-  <body>
-    <div id="app"></div>
-    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
-    <script nomodule crossorigin id="vite-legacy-polyfill" src="./assets/polyfills-legacy-B7bYnMQn.js"></script>
-    <script nomodule crossorigin id="vite-legacy-entry" data-src="./assets/index-legacy-DURH2HP1.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
-  </body>
+  <div class="card">
+    <h2>在做的事</h2>
+    <ul>
+      <li>在跨境电商公司做 TikTok，天天看视频、做视频</li>
+      <li>学个人理财，从股票基础开始，一步步来</li>
+      <li>对什么都好奇，喜欢把东西拆开看明白再装回去</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>这个网站</h2>
+    <p>这里是我的个人主页，ynwan.loc.cc。以后想写点什么、放点什么，就都在这儿了。</p>
+  </div>
+
+  <blockquote>
+    “What I cannot create, I do not understand.”
+    <span>—— Richard Feynman</span>
+  </blockquote>
+
+  <footer>© 2026 Ynwan · ynwan.loc.cc</footer>
+</main>
+</body>
 </html>
